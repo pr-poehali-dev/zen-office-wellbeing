@@ -47,7 +47,7 @@ export default function Index() {
   const pricingPlans = [
     {
       name: 'Start',
-      price: '64 000 ₽',
+      price: 'от 64 000 ₽',
       period: 'в месяц',
       features: [
         '4 выезда специалиста по уходу за телом в месяц',
@@ -59,7 +59,7 @@ export default function Index() {
     },
     {
       name: 'Balance',
-      price: '88 000 ₽',
+      price: 'от 88 000 ₽',
       period: 'в месяц',
       features: [
         '4 выезда специалиста по уходу за телом в месяц',
@@ -72,7 +72,7 @@ export default function Index() {
     },
     {
       name: 'Balance+',
-      price: '156 000 ₽',
+      price: 'от 156 000 ₽',
       period: 'в месяц',
       features: [
         '8 выездов специалиста по уходу за телом в месяц',
@@ -85,7 +85,7 @@ export default function Index() {
     },
     {
       name: 'Premium',
-      price: '192 000 ₽',
+      price: 'от 192 000 ₽',
       period: 'в месяц',
       features: [
         '8 выездов специалиста по уходу за телом в месяц',
