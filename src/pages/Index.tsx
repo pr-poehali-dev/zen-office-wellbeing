@@ -139,7 +139,7 @@ export default function Index() {
                 <div className="absolute inset-0 bg-secondary/20 rounded-full blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>
               <h1 className="text-2xl tracking-tight bg-gradient-to-r from-foreground via-secondary to-foreground bg-clip-text bg-[length:200%_auto] animate-gradient font-light text-[#000000]">
-                Офис Дзен
+                ОфисДзен
               </h1>
             </a>
             <div className="hidden md:flex items-center gap-6">
@@ -193,7 +193,7 @@ export default function Index() {
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-6">О сервисе</h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Офис Дзен — это комплексная система заботы о физическом и ментальном здоровье сотрудников. 
+              ОфисДзен — это комплексная система заботы о физическом и ментальном здоровье сотрудников. 
               Мы создаём пространство для восстановления энергии прямо в вашем офисе.
             </p>
           </div>
@@ -427,7 +427,7 @@ export default function Index() {
             <div>
               <div className="flex items-center gap-2 mb-4">
                 <Icon name="Sparkles" size={24} />
-                <h3 className="text-xl font-bold">Офис Дзен</h3>
+                <h3 className="text-xl font-bold">ОфисДзен</h3>
               </div>
               <p className="text-sm opacity-80">
                 Корпоративная система well-being для заботы о здоровье вашей команды
@@ -474,7 +474,7 @@ export default function Index() {
             </div>
           </div>
           <div className="border-t border-background/20 mt-8 pt-8 text-center text-sm opacity-60">
-            © 2024 Офис Дзен. Все права защищены.
+            © 2024 ОфисДзен. Все права защищены.
           </div>
         </div>
       </footer>
