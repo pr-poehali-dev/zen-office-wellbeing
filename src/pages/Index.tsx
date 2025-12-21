@@ -138,7 +138,7 @@ export default function Index() {
                 <Icon name="Sparkles" className="text-secondary transition-all duration-300 group-hover:rotate-12 group-hover:scale-110" size={32} />
                 <div className="absolute inset-0 bg-secondary/20 rounded-full blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>
-              <h1 className="text-2xl font-bold tracking-tight bg-gradient-to-r from-foreground via-secondary to-foreground bg-clip-text text-transparent bg-[length:200%_auto] animate-gradient">
+              <h1 className="text-2xl tracking-tight bg-gradient-to-r from-foreground via-secondary to-foreground bg-clip-text bg-[length:200%_auto] animate-gradient font-light text-[#000000]">
                 Офис Дзен
               </h1>
             </a>
