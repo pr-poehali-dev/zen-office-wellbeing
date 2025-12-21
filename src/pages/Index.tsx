@@ -40,7 +40,7 @@ export default function Index() {
       title: 'Пилатес и функциональные тренировки',
       description: 'Укрепление мышц и улучшение осанки. Эффективные тренировки для здоровой спины и энергии.',
       benefits: ['Укрепление мышц', 'Правильная осанка', 'Заряд энергии'],
-      image: 'https://cdn.poehali.dev/projects/49bc154a-8b05-4d5a-8ffe-2b909da8a9b0/files/e13bfff1-3ffc-4166-a759-4328b2f45174.jpg'
+      image: 'https://cdn.poehali.dev/projects/49bc154a-8b05-4d5a-8ffe-2b909da8a9b0/files/69d53068-643a-41a7-9a8e-39d9cd9f025e.jpg'
     }
   ];
 
@@ -210,11 +210,11 @@ export default function Index() {
             <Card className="border-2 hover:border-secondary transition-all hover:shadow-lg">
               <CardHeader>
                 <Icon name="Award" className="text-secondary mb-4" size={40} />
-                <CardTitle>5+ лет опыта</CardTitle>
+                <CardTitle>Опытные специалисты</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  Работаем с компаниями от 10 до 500+ сотрудников. Более 200 корпоративных клиентов доверяют нам.
+                  Работаем со специалистами и тренерами со стажем работы от 5+ лет.
                 </p>
               </CardContent>
             </Card>
