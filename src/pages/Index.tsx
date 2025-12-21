@@ -139,6 +139,7 @@ export default function Index() {
                   src="https://cdn.poehali.dev/files/IMG_1934.PNG" 
                   alt="ОфисДзен" 
                   className="w-full h-full object-contain transition-all duration-300 group-hover:scale-110"
+                  style={{ filter: 'brightness(0) saturate(100%) invert(50%) sepia(98%) saturate(382%) hue-rotate(45deg) brightness(96%) contrast(89%) opacity(0.65)' }}
                 />
                 <div className="absolute inset-0 bg-secondary/20 rounded-full blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>
@@ -434,6 +435,7 @@ export default function Index() {
                   src="https://cdn.poehali.dev/files/IMG_1934.PNG" 
                   alt="ОфисДзен" 
                   className="w-6 h-6 object-contain"
+                  style={{ filter: 'brightness(0) saturate(100%) invert(50%) sepia(98%) saturate(382%) hue-rotate(45deg) brightness(96%) contrast(89%) opacity(0.65)' }}
                 />
                 <h3 className="text-xl font-bold">ОфисДзен</h3>
               </div>
