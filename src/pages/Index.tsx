@@ -133,9 +133,13 @@ export default function Index() {
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-border">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
-            <a href="#" className="flex items-center gap-3 group text-[#65e887]">
-              <div className="relative">
-                <Icon name="Sparkles" className="text-secondary transition-all duration-300 group-hover:rotate-12 group-hover:scale-110" size={32} />
+            <a href="#" className="flex items-center gap-3 group">
+              <div className="relative w-10 h-10">
+                <img 
+                  src="https://cdn.poehali.dev/files/IMG_1934.PNG" 
+                  alt="ОфисДзен" 
+                  className="w-full h-full object-contain transition-all duration-300 group-hover:scale-110"
+                />
                 <div className="absolute inset-0 bg-secondary/20 rounded-full blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>
               <h1 className="text-2xl tracking-tight bg-gradient-to-r from-foreground via-secondary to-foreground bg-clip-text bg-[length:200%_auto] animate-gradient font-light text-[#000000]">
@@ -426,7 +430,11 @@ export default function Index() {
           <div className="grid md:grid-cols-4 gap-8">
             <div>
               <div className="flex items-center gap-2 mb-4">
-                <Icon name="Sparkles" size={24} />
+                <img 
+                  src="https://cdn.poehali.dev/files/IMG_1934.PNG" 
+                  alt="ОфисДзен" 
+                  className="w-6 h-6 object-contain"
+                />
                 <h3 className="text-xl font-bold">ОфисДзен</h3>
               </div>
               <p className="text-sm opacity-80">
