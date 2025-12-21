@@ -456,11 +456,11 @@ export default function Index() {
               <ul className="space-y-2 text-sm opacity-80">
                 <li className="flex items-center gap-2">
                   <Icon name="Mail" size={16} />
-                  officedzen@mail.ru
+                  <a href="mailto:officedzen@mail.ru" className="hover:opacity-100">officedzen@mail.ru</a>
                 </li>
                 <li className="flex items-center gap-2">
                   <Icon name="Phone" size={16} />
-                  +7 909 5-9000-78
+                  <a href="tel:+79095900078" className="hover:opacity-100">+7 909 5-9000-78</a>
                 </li>
                 <li className="flex items-center gap-2">
                   <Icon name="MapPin" size={16} />
