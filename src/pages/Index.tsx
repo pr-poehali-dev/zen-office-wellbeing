@@ -134,7 +134,7 @@ export default function Index() {
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <a href="#" className="flex items-center gap-0 group">
-              <div className="relative w-16 h-16">
+              <div className="relative w-16 h-16 -mr-2">
                 <img 
                   src="https://cdn.poehali.dev/files/IMG_1934.PNG" 
                   alt="ОфисДзен" 
@@ -434,7 +434,7 @@ export default function Index() {
                 <img 
                   src="https://cdn.poehali.dev/files/IMG_1934.PNG" 
                   alt="ОфисДзен" 
-                  className="w-12 h-12 object-contain"
+                  className="w-12 h-12 object-contain -mr-1"
                   style={{ filter: 'brightness(0) saturate(100%) invert(50%) sepia(98%) saturate(382%) hue-rotate(45deg) brightness(96%) contrast(89%) opacity(0.65)' }}
                 />
                 <h3 className="text-xl font-bold">фисДзен</h3>
