@@ -15,6 +15,8 @@ export default function Index() {
     message: ''
   });
 
+  const offerDocumentUrl = '/offer-agreement.pdf';
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     console.log('Form submitted:', formData);
@@ -446,7 +448,7 @@ export default function Index() {
                 <li><a href="#about" className="hover:opacity-100">О нас</a></li>
                 <li><a href="#pricing" className="hover:opacity-100">Тарифы</a></li>
                 <li><a href="#faq" className="hover:opacity-100">FAQ</a></li>
-                <li><a href="#contact" className="hover:opacity-100">Контакты</a></li>
+                <li><a href={offerDocumentUrl} target="_blank" rel="noopener noreferrer" className="hover:opacity-100">Договор оферты</a></li>
               </ul>
             </div>
             <div>
