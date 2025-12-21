@@ -296,7 +296,7 @@ export default function Index() {
                 )}
                 <CardHeader className="text-center pb-8">
                   <CardTitle className="text-2xl mb-2">{plan.name}</CardTitle>
-                  <div className="text-4xl font-bold text-secondary bg-transparent">{plan.price}</div>
+                  <div className="text-4xl font-bold text-foreground">{plan.price}</div>
                   <p className="text-muted-foreground">{plan.period}</p>
                 </CardHeader>
                 <CardContent>
