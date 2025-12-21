@@ -143,7 +143,7 @@ export default function Index() {
                 />
                 <div className="absolute inset-0 bg-[#51a700]/30 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               </div>
-              <h1 className="tracking-tight bg-gradient-to-r from-[#51a700a6] via-[#d8e4cdcf] to-[#51a700a6] bg-clip-text bg-[length:200%_auto] animate-gradient font-semibold text-transparent text-3xl transition-all duration-300 group-hover:drop-shadow-[0_0_8px_rgba(81,167,0,0.5)]">
+              <h1 className="tracking-tight font-semibold text-[#51a700a6] text-3xl transition-all duration-300 group-hover:drop-shadow-[0_0_8px_rgba(81,167,0,0.5)]">
                 фисДзен
               </h1>
             </a>
