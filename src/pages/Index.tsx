@@ -161,7 +161,7 @@ export default function Index() {
             <div className="animate-fade-in">
               <h2 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
                 Забота о здоровье
-                <span className="block text-secondary">вашей команды</span>
+                <span className="block text-gray-300">вашей команды</span>
               </h2>
               <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
                 Корпоративная система well-being: массаж в офисе, йога, пилатес и функциональные тренировки. 
