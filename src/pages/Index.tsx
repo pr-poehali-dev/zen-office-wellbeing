@@ -143,7 +143,7 @@ export default function Index() {
                 />
                 <div className="absolute inset-0 bg-secondary/20 rounded-full blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>
-              <h1 className="text-2xl tracking-tight bg-gradient-to-r from-foreground via-secondary to-foreground bg-clip-text bg-[length:200%_auto] animate-gradient font-light text-[#000000]">
+              <h1 className="text-2xl tracking-tight bg-gradient-to-r from-foreground via-secondary to-foreground bg-clip-text bg-[length:200%_auto] animate-gradient text-[#51a700a6] font-semibold">
                 фисДзен
               </h1>
             </a>
