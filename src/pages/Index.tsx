@@ -294,7 +294,7 @@ export default function Index() {
                 )}
                 <CardHeader className="text-center pb-8">
                   <CardTitle className="text-2xl mb-2">{plan.name}</CardTitle>
-                  <div className="text-4xl font-bold text-secondary">{plan.price}</div>
+                  <div className="text-4xl font-bold text-secondary bg-transparent">{plan.price}</div>
                   <p className="text-muted-foreground">{plan.period}</p>
                 </CardHeader>
                 <CardContent>
@@ -318,8 +318,8 @@ export default function Index() {
             ))}
           </div>
           <div className="text-center mt-12">
-            <p className="text-lg text-muted-foreground">
-              Не нашли подходящий тариф? <a href="#contact" className="text-secondary font-semibold hover:underline">Оставьте заявку</a> для составления индивидуального пакета услуг!
+            <p className="text-muted-foreground text-base">
+              Не нашли подходящий тариф? <a href="#contact" className="hover:underline px-0 py-0 rounded-none text-[#000000] font-medium">Оставьте заявку</a> для составления индивидуального пакета услуг!
             </p>
           </div>
         </div>
