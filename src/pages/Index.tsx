@@ -281,7 +281,7 @@ export default function Index() {
               Выберите подходящий пакет для вашей компании. Оплата полная или частичная.
             </p>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
             {pricingPlans.map((plan, index) => (
               <Card 
                 key={index} 
