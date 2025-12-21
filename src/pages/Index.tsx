@@ -133,8 +133,8 @@ export default function Index() {
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-border">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
-            <a href="#" className="flex items-center gap-1 group">
-              <div className="relative w-8 h-8">
+            <a href="#" className="flex items-center gap-0 group">
+              <div className="relative w-16 h-16">
                 <img 
                   src="https://cdn.poehali.dev/files/IMG_1934.PNG" 
                   alt="ОфисДзен" 
@@ -430,11 +430,11 @@ export default function Index() {
         <div className="container mx-auto max-w-6xl">
           <div className="grid md:grid-cols-4 gap-8">
             <div>
-              <div className="flex items-center gap-1 mb-4">
+              <div className="flex items-center gap-0 mb-4">
                 <img 
                   src="https://cdn.poehali.dev/files/IMG_1934.PNG" 
                   alt="ОфисДзен" 
-                  className="w-6 h-6 object-contain"
+                  className="w-12 h-12 object-contain"
                   style={{ filter: 'brightness(0) saturate(100%) invert(50%) sepia(98%) saturate(382%) hue-rotate(45deg) brightness(96%) contrast(89%) opacity(0.65)' }}
                 />
                 <h3 className="text-xl font-bold">фисДзен</h3>
