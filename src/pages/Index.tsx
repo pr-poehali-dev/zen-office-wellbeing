@@ -138,12 +138,12 @@ export default function Index() {
                 <img 
                   src="https://cdn.poehali.dev/files/IMG_1934.PNG" 
                   alt="ОфисДзен" 
-                  className="w-full h-full object-contain transition-all duration-300 group-hover:scale-110"
+                  className="w-full h-full object-contain transition-all duration-300 group-hover:scale-110 rounded-none"
                   style={{ filter: 'brightness(0) saturate(100%) invert(50%) sepia(98%) saturate(382%) hue-rotate(45deg) brightness(96%) contrast(89%) opacity(0.65)' }}
                 />
                 <div className="absolute inset-0 bg-secondary/20 rounded-full blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>
-              <h1 className="text-2xl tracking-tight bg-gradient-to-r from-[#51a700a6] via-[#d8e4cdcf] to-[#51a700a6] bg-clip-text bg-[length:200%_auto] animate-gradient font-semibold text-[#51a700a6]">
+              <h1 className="tracking-tight bg-gradient-to-r from-[#51a700a6] via-[#7ddb00] to-[#51a700a6] bg-clip-text bg-[length:200%_auto] animate-gradient font-semibold text-[#d8e4cdcf] text-3xl">
                 фисДзен
               </h1>
             </a>
