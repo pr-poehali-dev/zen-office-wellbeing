@@ -456,15 +456,15 @@ export default function Index() {
               <ul className="space-y-2 text-sm opacity-80">
                 <li className="flex items-center gap-2">
                   <Icon name="Mail" size={16} />
-                  info@офисдзен.рф
+                  officedzen@mail.ru
                 </li>
                 <li className="flex items-center gap-2">
                   <Icon name="Phone" size={16} />
-                  +7 (495) 123-45-67
+                  +7 909 5-9000-78
                 </li>
                 <li className="flex items-center gap-2">
                   <Icon name="MapPin" size={16} />
-                  Москва, Россия
+                  Санкт-Петербург, Россия
                 </li>
               </ul>
             </div>
