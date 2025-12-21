@@ -463,6 +463,10 @@ export default function Index() {
                   <a href="tel:+79095900078" className="hover:opacity-100">+7 909 5-9000-78</a>
                 </li>
                 <li className="flex items-center gap-2">
+                  <Icon name="Send" size={16} />
+                  <a href="https://t.me/officedzen" target="_blank" rel="noopener noreferrer" className="hover:opacity-100">Telegram</a>
+                </li>
+                <li className="flex items-center gap-2">
                   <Icon name="MapPin" size={16} />
                   Санкт-Петербург, Россия
                 </li>
