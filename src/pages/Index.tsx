@@ -317,6 +317,11 @@ export default function Index() {
               </Card>
             ))}
           </div>
+          <div className="text-center mt-12">
+            <p className="text-lg text-muted-foreground">
+              Не нашли подходящий тариф? <a href="#contact" className="text-secondary font-semibold hover:underline">Оставьте заявку</a> для составления индивидуального пакета услуг!
+            </p>
+          </div>
         </div>
       </section>
 
