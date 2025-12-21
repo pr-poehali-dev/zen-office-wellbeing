@@ -133,7 +133,7 @@ export default function Index() {
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-border">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
-            <a href="#" className="flex items-center gap-3 group">
+            <a href="#" className="flex items-center gap-3 group text-[#65e887]">
               <div className="relative">
                 <Icon name="Sparkles" className="text-secondary transition-all duration-300 group-hover:rotate-12 group-hover:scale-110" size={32} />
                 <div className="absolute inset-0 bg-secondary/20 rounded-full blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
