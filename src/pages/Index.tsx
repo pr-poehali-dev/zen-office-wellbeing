@@ -134,7 +134,7 @@ export default function Index() {
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <a href="#" className="flex items-center gap-0 group">
-              <div className="relative w-16 h-16 -mr-2">
+              <div className="relative w-16 h-16 -mr-2 animate-breathing">
                 <img 
                   src="https://cdn.poehali.dev/files/IMG_1934.PNG" 
                   alt="ОфисДзен" 
