@@ -103,7 +103,7 @@ export default {
 				},
 				'breathing': {
 					'0%, 100%': { transform: 'scale(1)' },
-					'50%': { transform: 'scale(1.02)' }
+					'50%': { transform: 'scale(1.05)' }
 				}
 			},
 			animation: {
@@ -112,7 +112,7 @@ export default {
 				'fade-in': 'fade-in 0.5s ease-out',
 				'scale-in': 'scale-in 0.3s ease-out',
 				'gradient': 'gradient 2s ease-in-out infinite',
-				'breathing': 'breathing 6s ease-in-out infinite'
+				'breathing': 'breathing 3s ease-in-out infinite'
 			}
 		}
 	},
