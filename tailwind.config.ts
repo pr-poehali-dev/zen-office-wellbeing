@@ -100,6 +100,10 @@ export default {
 				'gradient': {
 					'0%, 100%': { backgroundPosition: '0% 50%' },
 					'50%': { backgroundPosition: '100% 50%' }
+				},
+				'breathing': {
+					'0%, 100%': { transform: 'scale(1)' },
+					'50%': { transform: 'scale(1.02)' }
 				}
 			},
 			animation: {
@@ -107,7 +111,8 @@ export default {
 				'accordion-up': 'accordion-up 0.2s ease-out',
 				'fade-in': 'fade-in 0.5s ease-out',
 				'scale-in': 'scale-in 0.3s ease-out',
-				'gradient': 'gradient 2s ease-in-out infinite'
+				'gradient': 'gradient 2s ease-in-out infinite',
+				'breathing': 'breathing 6s ease-in-out infinite'
 			}
 		}
 	},
