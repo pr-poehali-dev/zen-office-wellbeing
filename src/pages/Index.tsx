@@ -147,7 +147,7 @@ export default function Index() {
                 <h1 className="tracking-tight font-semibold text-[#51a700a6] text-3xl group-hover:drop-shadow-[0_0_8px_rgba(81,167,0,0.5)]">
                   фисДзен
                 </h1>
-                <p className="text-xs text-muted-foreground mt-0.5">
+                <p className="text-muted-foreground mt-0.5 text-base text-center">
                   Power On: здоровая команда - успешный бизнес
                 </p>
               </div>
