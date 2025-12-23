@@ -133,24 +133,24 @@ export default function Index() {
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-border">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
-            <a href="#" className="flex items-center gap-0 group">
-              <div className="relative w-16 h-16 -mr-2 animate-breathing">
-                <img 
-                  src="https://cdn.poehali.dev/files/IMG_1934.PNG" 
-                  alt="ОфисДзен" 
-                  className="w-full h-full object-contain transition-all duration-500 group-hover:scale-125 group-hover:rotate-12 rounded-none"
-                  style={{ filter: 'brightness(0) saturate(100%) invert(50%) sepia(98%) saturate(382%) hue-rotate(45deg) brightness(96%) contrast(89%) opacity(0.65)' }}
-                />
-                <div className="absolute inset-0 bg-[#51a700]/30 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-              </div>
-              <div className="flex flex-col">
+            <a href="#" className="group">
+              <div className="flex items-center gap-0">
+                <div className="relative w-16 h-16 -mr-2 animate-breathing">
+                  <img 
+                    src="https://cdn.poehali.dev/files/IMG_1934.PNG" 
+                    alt="ОфисДзен" 
+                    className="w-full h-full object-contain transition-all duration-500 group-hover:scale-125 group-hover:rotate-12 rounded-none"
+                    style={{ filter: 'brightness(0) saturate(100%) invert(50%) sepia(98%) saturate(382%) hue-rotate(45deg) brightness(96%) contrast(89%) opacity(0.65)' }}
+                  />
+                  <div className="absolute inset-0 bg-[#51a700]/30 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                </div>
                 <h1 className="tracking-tight font-semibold text-[#51a700a6] text-3xl group-hover:drop-shadow-[0_0_8px_rgba(81,167,0,0.5)]">
                   фисДзен
                 </h1>
-                <p className="text-muted-foreground mt-0.5 text-base text-center">
-                  Power On: здоровая команда - успешный бизнес
-                </p>
               </div>
+              <p className="text-muted-foreground mt-1 text-xs ml-14">
+                Power On: здоровая команда - успешный бизнес
+              </p>
             </a>
             <div className="hidden md:flex items-center gap-6">
               <a href="#about" className="text-sm font-medium hover:text-secondary transition-colors">О сервисе</a>
