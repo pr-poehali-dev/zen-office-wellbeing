@@ -148,7 +148,7 @@ export default function Index() {
                   фисДзен
                 </h1>
               </div>
-              <p className="text-muted-foreground mt-0.5 text-xs ml-14">
+              <p className="text-muted-foreground mt-0 text-xs ml-14">
                 Power On: здоровая команда - успешный бизнес
               </p>
             </a>
