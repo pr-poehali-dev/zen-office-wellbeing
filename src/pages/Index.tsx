@@ -15,7 +15,7 @@ export default function Index() {
     message: ''
   });
 
-  const offerDocumentUrl = '/offer-agreement.pdf';
+  const offerDocumentUrl = 'https://docs.google.com/document/d/1zW8r8uo5XFuPYQ5D5xZwSBRJTezYFwsi7Pl7YTxn0sM/edit?usp=sharing';
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
