@@ -143,9 +143,14 @@ export default function Index() {
                 />
                 <div className="absolute inset-0 bg-[#51a700]/30 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               </div>
-              <h1 className="tracking-tight font-semibold text-[#51a700a6] text-3xl group-hover:drop-shadow-[0_0_8px_rgba(81,167,0,0.5)]">
-                фисДзен
-              </h1>
+              <div className="flex flex-col">
+                <h1 className="tracking-tight font-semibold text-[#51a700a6] text-3xl group-hover:drop-shadow-[0_0_8px_rgba(81,167,0,0.5)]">
+                  фисДзен
+                </h1>
+                <p className="text-xs text-muted-foreground mt-0.5">
+                  Power On: здоровая команда - успешный бизнес
+                </p>
+              </div>
             </a>
             <div className="hidden md:flex items-center gap-6">
               <a href="#about" className="text-sm font-medium hover:text-secondary transition-colors">О сервисе</a>
