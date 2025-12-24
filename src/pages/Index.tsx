@@ -153,11 +153,11 @@ export default function Index() {
                 <a href="#services" className="text-sm font-medium hover:text-secondary transition-colors">Услуги</a>
                 <a href="#pricing" className="text-sm font-medium hover:text-secondary transition-colors">Цены</a>
                 <a href="#faq" className="text-sm font-medium hover:text-secondary transition-colors">Вопросы</a>
+                <Button asChild className="bg-secondary hover:bg-secondary/90">
+                  <a href="#contact">Оставить заявку</a>
+                </Button>
               </div>
             </div>
-            <Button asChild className="bg-secondary hover:bg-secondary/90">
-              <a href="#contact">Оставить заявку</a>
-            </Button>
           </div>
           <p className="text-muted-foreground mt-2 text-xs ml-14">
             Power On: здоровая команда - успешный бизнес
