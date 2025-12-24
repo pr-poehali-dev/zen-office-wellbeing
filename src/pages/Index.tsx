@@ -133,8 +133,8 @@ export default function Index() {
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-border">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
-            <a href="#" className="group">
-              <div className="flex items-center gap-0">
+            <div className="flex items-center gap-8">
+              <a href="#" className="group flex items-center gap-0">
                 <div className="relative w-16 h-16 -mr-2 animate-breathing">
                   <img 
                     src="https://cdn.poehali.dev/files/IMG_1934.PNG" 
@@ -147,21 +147,21 @@ export default function Index() {
                 <h1 className="tracking-tight font-semibold text-[#51a700a6] text-3xl group-hover:drop-shadow-[0_0_8px_rgba(81,167,0,0.5)]">
                   фисДзен
                 </h1>
+              </a>
+              <div className="hidden lg:flex items-center gap-6">
+                <a href="#about" className="text-sm font-medium hover:text-secondary transition-colors">О сервисе</a>
+                <a href="#services" className="text-sm font-medium hover:text-secondary transition-colors">Услуги</a>
+                <a href="#pricing" className="text-sm font-medium hover:text-secondary transition-colors">Цены</a>
+                <a href="#faq" className="text-sm font-medium hover:text-secondary transition-colors">Вопросы</a>
               </div>
-              <p className="text-muted-foreground mt-0 ml-14 text-base">
-                Power On: здоровая команда - успешный бизнес
-              </p>
-            </a>
-            <div className="hidden md:flex items-center gap-6">
-              <a href="#about" className="text-sm font-medium hover:text-secondary transition-colors">О сервисе</a>
-              <a href="#services" className="text-sm font-medium hover:text-secondary transition-colors">Услуги</a>
-              <a href="#pricing" className="text-sm font-medium hover:text-secondary transition-colors">Цены</a>
-              <a href="#faq" className="text-sm font-medium hover:text-secondary transition-colors">Вопросы</a>
-              <Button asChild className="bg-secondary hover:bg-secondary/90">
-                <a href="#contact">Оставить заявку</a>
-              </Button>
             </div>
+            <Button asChild className="bg-secondary hover:bg-secondary/90">
+              <a href="#contact">Оставить заявку</a>
+            </Button>
           </div>
+          <p className="text-muted-foreground mt-2 text-xs ml-14">
+            Power On: здоровая команда - успешный бизнес
+          </p>
         </div>
       </nav>
 
