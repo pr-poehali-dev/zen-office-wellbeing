@@ -7,6 +7,7 @@ import { Textarea } from '@/components/ui/textarea';
 import Icon from '@/components/ui/icon';
 
 export default function Index() {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [formData, setFormData] = useState({
     name: '',
     company: '',
@@ -158,7 +159,26 @@ export default function Index() {
                 </Button>
               </div>
             </div>
+            <Button 
+              variant="ghost" 
+              size="icon" 
+              className="lg:hidden"
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            >
+              <Icon name={mobileMenuOpen ? "X" : "Menu"} size={24} />
+            </Button>
           </div>
+          {mobileMenuOpen && (
+            <div className="lg:hidden mt-4 pb-4 flex flex-col gap-3 border-t border-border pt-4">
+              <a href="#about" className="text-sm font-medium hover:text-secondary transition-colors" onClick={() => setMobileMenuOpen(false)}>О сервисе</a>
+              <a href="#services" className="text-sm font-medium hover:text-secondary transition-colors" onClick={() => setMobileMenuOpen(false)}>Услуги</a>
+              <a href="#pricing" className="text-sm font-medium hover:text-secondary transition-colors" onClick={() => setMobileMenuOpen(false)}>Цены</a>
+              <a href="#faq" className="text-sm font-medium hover:text-secondary transition-colors" onClick={() => setMobileMenuOpen(false)}>Вопросы</a>
+              <Button asChild className="bg-secondary hover:bg-secondary/90 w-full">
+                <a href="#contact" onClick={() => setMobileMenuOpen(false)}>Оставить заявку</a>
+              </Button>
+            </div>
+          )}
           <p className="text-muted-foreground mt-2 text-xs ml-14">
             Power On: здоровая команда - успешный бизнес
           </p>
