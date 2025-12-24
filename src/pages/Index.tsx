@@ -183,7 +183,7 @@ export default function Index() {
         </div>
       </nav>
 
-      <section className="pt-32 pb-20 px-4">
+      <section className="pt-40 pb-20 px-4 md:pt-32">
         <div className="container mx-auto max-w-6xl">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="animate-fade-in">
