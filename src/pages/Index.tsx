@@ -179,7 +179,7 @@ export default function Index() {
               </Button>
             </div>
           )}
-          <p className="text-muted-foreground mt-2 text-xs ml-14">
+          <p className="text-muted-foreground mt-2 ml-14 text-lg font-light">
             Power On: здоровая команда - успешный бизнес
           </p>
         </div>
