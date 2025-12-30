@@ -18,9 +18,36 @@ export default function Index() {
 
   const offerDocumentUrl = 'https://docs.google.com/document/d/1zW8r8uo5XFuPYQ5D5xZwSBRJTezYFwsi7Pl7YTxn0sM/edit?usp=sharing';
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<{type: 'success' | 'error', message: string} | null>(null);
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
+    setIsSubmitting(true);
+    setSubmitStatus(null);
+
+    try {
+      const response = await fetch('https://functions.poehali.dev/3b4f84b0-2eab-46ff-9ce2-dfc3b6dc3677', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        setSubmitStatus({type: 'success', message: data.message});
+        setFormData({name: '', company: '', email: '', phone: '', message: ''});
+      } else {
+        setSubmitStatus({type: 'error', message: data.error || 'Произошла ошибка при отправке'});
+      }
+    } catch (error) {
+      setSubmitStatus({type: 'error', message: 'Ошибка соединения. Попробуйте позже.'});
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const services = [
@@ -440,8 +467,18 @@ export default function Index() {
                     rows={4}
                   />
                 </div>
-                <Button type="submit" size="lg" className="w-full bg-secondary hover:bg-secondary/90">
-                  Отправить заявку
+                {submitStatus && (
+                  <div className={`p-4 rounded-lg mb-4 ${submitStatus.type === 'success' ? 'bg-green-50 text-green-800 border border-green-200' : 'bg-red-50 text-red-800 border border-red-200'}`}>
+                    {submitStatus.message}
+                  </div>
+                )}
+                <Button 
+                  type="submit" 
+                  size="lg" 
+                  className="w-full bg-secondary hover:bg-secondary/90"
+                  disabled={isSubmitting}
+                >
+                  {isSubmitting ? 'Отправка...' : 'Отправить заявку'}
                 </Button>
               </form>
             </CardContent>
