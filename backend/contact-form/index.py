@@ -3,9 +3,43 @@ import os
 import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
+import urllib.request
+import urllib.parse
+
+def send_telegram_notification(name: str, company: str, email: str, phone: str, message: str) -> bool:
+    '''Отправка уведомления в Telegram'''
+    try:
+        bot_token = os.environ.get('TELEGRAM_BOT_TOKEN')
+        chat_id = os.environ.get('TELEGRAM_CHAT_ID')
+        
+        if not bot_token or not chat_id:
+            return False
+        
+        text = f"""🔔 <b>Новая заявка с сайта ОфисДзен</b>
+
+👤 <b>Имя:</b> {name}
+🏢 <b>Компания:</b> {company}
+📧 <b>Email:</b> {email}
+📱 <b>Телефон:</b> {phone}"""
+        
+        if message:
+            text += f"\n💬 <b>Сообщение:</b>\n{message}"
+        
+        url = f"https://api.telegram.org/bot{bot_token}/sendMessage"
+        data = urllib.parse.urlencode({
+            'chat_id': chat_id,
+            'text': text,
+            'parse_mode': 'HTML'
+        }).encode('utf-8')
+        
+        req = urllib.request.Request(url, data=data)
+        with urllib.request.urlopen(req, timeout=5) as response:
+            return response.status == 200
+    except Exception:
+        return False
 
 def handler(event: dict, context) -> dict:
-    '''API для отправки заявок с формы обратной связи на email'''
+    '''API для отправки заявок с формы обратной связи на email и Telegram'''
     method = event.get('httpMethod', 'GET')
 
     if method == 'OPTIONS':
@@ -132,6 +166,8 @@ def handler(event: dict, context) -> dict:
         with smtplib.SMTP_SSL(smtp_host, smtp_port) as server:
             server.login(smtp_user, smtp_password)
             server.send_message(msg)
+        
+        send_telegram_notification(name, company, email, phone, message)
 
         return {
             'statusCode': 200,
