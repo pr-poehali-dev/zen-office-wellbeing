@@ -534,7 +534,7 @@ export default function Index() {
                 </li>
                 <li className="flex items-center gap-2">
                   <Icon name="Send" size={16} />
-                  <a href="https://t.me/officedzen" target="_blank" rel="noopener noreferrer" className="hover:opacity-100">Telegram</a>
+                  <a href="https://t.me/officedzen_manager" target="_blank" rel="noopener noreferrer" className="hover:opacity-100">Telegram</a>
                 </li>
                 <li className="flex items-center gap-2">
                   <Icon name="MapPin" size={16} />
